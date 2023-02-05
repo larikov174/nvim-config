@@ -11,6 +11,8 @@ vim.g.loaded_netrwPlugin = 1
 -- change color for arrows in tree to light blue
 vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
 
+-- find current opened file in tree
+vim.keymap.set("n", "<c-n>", ":NvimTreeFindFileToggle<CR>")
 -- configure nvim-tree
 nvimtree.setup({
   view = {
