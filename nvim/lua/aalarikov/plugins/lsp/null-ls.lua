@@ -22,6 +22,7 @@ null_ls.setup({
         "--single-quote",
         "--jsx-signle-quote",
       },
+      disabled_filetypes = { "markdown" },
     }), -- js/ts formatter
     formatting.stylua, -- lua formatter
     diagnostics.eslint_d.with({ -- js/ts linter
